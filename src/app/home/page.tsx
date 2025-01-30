@@ -1,35 +1,130 @@
 
-// import Contact from "../app/contact/contact";
-// import Header from "./components/header";
+ 
 import Image from 'next/image'
-import img from '../public/pngtree-modern-kitchen-food-boxed-cheese-lunch-pizza-png-image_9048155.png'
-import img2 from '../public/Junk-Food-PNG-Picture.png'
-import img3 from '../public/deal2.png'
-import img4 from '../public/pngtree-burger-food-png-free-download-png-image_13329458.png'
-import img5 from '../public/pngtree-fast-foods-png-image_13369480.png'
- import img6 from '../public/burr.webp'
- import img7 from '../public/b.png'
- import img8 from '../public/dee.webp'
- import img9 from '../public/nug.webp'
+
+
 
 function Homepage() {
   return (
-    <div>
-      <div className='flex justify-evenly flex-wrap  my-5'>
-        <Image  src={img} alt="pizza" width={250} height={100} />
-        <Image src={img2} alt="deal" width={300} height={100} />
-        <Image src={img3} alt="burgeer" width={300} height={100} />
+    <div className='w-max'>
+      <div className='grid  grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-10 m-5 '>
+        {/* Image 1 */}
+        <div className="relative group w-[350px] h-[300px] mt-5">
+          <Image
+            src='/deal.png'
+            alt="pizza"
+            width={350}
+            height={200}
+            className='hover:scale-105 active:scale-100 transition-all'
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 rounded-md transition-opacity">
+            <span className="text-white font-bold text-lg">Order</span>
+          </div>
         </div>
-        <div className='flex justify-evenly flex-wrap '>
-        <Image src={img4} alt="burgeer" width={300} height={100} />
-        <Image src={img5} alt="burgeer" width={300} height={100} />
-        <Image src={img6} alt="burgeer" width={300} height={100}/>
+
+        {/* Image 2 */}
+        <div className="relative group w-[350px] h-[300px]">
+          <Image
+            src='/Junk-Food-PNG-Picture.png'
+            alt="deal"
+            width={400}
+            height={200}
+            className='hover:scale-105 active:scale-100 transition-all'
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 rounded-lg transition-opacity">
+            <span className="text-white font-bold text-lg">Order</span>
+          </div>
         </div>
-      <div className='flex justify-evenly flex-wrap '>
-        <Image src={img8} alt="burgeer" width={300} height={90}/> 
-         <Image src={img7} alt="burgeer" width={300} height={100}/>
-        <Image src={img9} alt="burgeer" width={250} height={100}/>
+
+        {/* Image 3 */}
+        <div className="relative group w-[350px] h-[300px]">
+          <Image
+            src='/deal2.png'
+            alt="burger"
+            width={400}
+            height={200}
+            className='hover:scale-105 active:scale-100 transition-all'
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 rounded-lg transition-opacity">
+            <span className="text-white font-bold text-lg">Order</span>
+          </div>
+        </div>
       </div>
+
+      <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3  '>
+        <div className="relative group w-[350px] h-[300px]">
+          <Image
+            src='/pangree.png'
+            alt="burger"
+            width={350}
+            height={100}
+            className='hover:scale-105 active:scale-100 transition-all'
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 rounded-lg transition-opacity">
+            <span className="text-white font-bold text-lg">Order</span>
+          </div>
+        </div>
+        <div className="relative group w-[350px] h-[300px]">
+          <Image
+            src='/ff.png'
+            alt="burger"
+            width={350}
+            height={100}
+            className='hover:scale-105 active:scale-100 transition-all'
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 rounded-lg transition-opacity">
+            <span className="text-white font-bold text-lg">Order</span>
+          </div>
+        </div>
+        <div className="relative group  w-[300px]">
+          <Image
+            src='/burr.webp'
+            alt="burger"
+            width={350}
+            height={200}
+            className='hover:scale-105 active:scale-100 transition-all'
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 rounded-lg transition-opacity">
+            <span className="text-white font-bold text-lg">Order</span>
+          </div>
+        </div>        </div>
+      <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 m-5 items-center'>
+        <div className="relative group rounded-4xl w-[350px] h-[300px] ">
+          <Image
+            src='/dee.webp'
+            alt="burger"
+            width={450}
+            height={200}
+            className='mt-7'
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 rounded-lg transition-opacity">
+            <span className="text-white font-bold text-lg">Order</span>
+          </div>
+        </div>
+        <div className="relative group rounded-4xl w-[350px] h-[300px]">
+          <Image
+            src='/b.png'
+            alt="burger"
+            width={350}
+            height={100}
+            className='hover:scale-105 active:scale-100 transition-all'
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 rounded-lg transition-opacity">
+            <span className="text-white font-bold text-lg">Order</span>
+          </div>
+        </div>
+        <div className="relative group rounded-4xl w-[350px] h-[300px]">
+          <Image
+            src='/nug.webp'
+            alt="burger"
+            width={350}
+            height={200}
+            className='hover:scale-105 active:scale-100 transition-all'
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 rounded-lg transition-opacity">
+            <span className="text-white font-bold text-lg">Order</span>
+          </div>
+        </div>      </div>
     </div>
 
 

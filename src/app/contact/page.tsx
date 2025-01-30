@@ -1,32 +1,69 @@
-function Contact(){
-  return(
-    <div>
-       <div className="  ">
-        <h1 className="font-bold  text-center"> Contact Us</h1>
-        <form  className='bg-neutral-200 text-center h-78vw'action="submit_contact_form.php my-2" method="POST">
-            <div className="form-group my-5">
-                <label className="mx-10">Your Name</label>
-                <br />
-                <input className=" mx-5  border-solid border-2 w-36 border-indigo-400" type="text" id="name" name="name" placeholder="Enter your name" required/>
+function Contact() {
+    return (
+      <div className="flex justify-center items-center min-h-screen bg-gray-100 px-4">
+        <div className="w-full max-w-md bg-white shadow-lg rounded-lg p-6">
+          <h1 className="text-2xl font-bold text-center text-gray-800 mb-4">
+            Contact Us
+          </h1>
+  
+          <form action="submit_contact_form.php" method="POST" className="space-y-4">
+            {/* Name Field */}
+            <div>
+              <label htmlFor="name" className="block text-gray-700 font-medium">
+                Your Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
             </div>
-            <div className="form-group  ">
-                <label  className="">Your Email</label>
-                <br />
-                <input className=" mx-4  border-solid border-2 w-36 border-indigo-400" type="email" id="email" name="email" placeholder="Enter your email" required/>
+  
+            {/* Email Field */}
+            <div>
+              <label htmlFor="email" className="block text-gray-700 font-medium">
+                Your Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
             </div>
-            <div className="form-group">
-                <label className="mx-10" >Message</label>
-                <br />
-                <input className=' mx-5 border-solid border-2 w-36 border-indigo-400' id="message" name="message" placeholder="Write your message here" required/>
+  
+            {/* Message Field */}
+            <div>
+              <label htmlFor="message" className="block text-gray-700 font-medium">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message here..."
+                required
+                rows={4}
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              ></textarea>
             </div>
-            <button className=" mx-10 my-5  text-slate-500 hover:text-blue-200 bg-slate-800" type="submit">Submit</button>
-        </form>
-
-       
-    </div>
-    </div>
-  )
-
-
-}
-export default Contact;
+  
+            {/* Submit Button */}
+            <button
+              type="submit"
+              className="w-full bg-indigo-600 text-white font-semibold py-2 rounded-lg hover:bg-indigo-700 transition duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    );
+  }
+  
+  export default Contact;
+  

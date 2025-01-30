@@ -1,7 +1,5 @@
 import Image from "next/image"
-import Insta from '../public/inn.png'
-import Fb from '../public/fbb.png'
-import Waap from '../public/wapp.png'
+
 import '../style/stylr.css'
 
 
@@ -50,9 +48,9 @@ function Footer (){
       <div className="">
         <p className="font-bold ">FOLLOW US</p>  
         <div className="flex justify-between gap-2 py-5">
-        <Image  src={Insta} alt="pizza" width={50} height={50} />
-        <Image  src={Fb} alt="pizza" width={50} height={50} />
-        <Image  src={Waap} alt="pizza" width={50} height={50} />
+        <Image  src='/inn.png' alt="pizza" width={50} height={50} />
+        <Image  src='/fbb.png' alt="pizza" width={50} height={50} />
+        <Image  src='/wapp.png' alt="pizza" width={50} height={50} />
 
 
       

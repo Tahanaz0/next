@@ -1,6 +1,4 @@
 import Image from "next/image"
-import img6 from '../public/pizza.jpg'
-import img7 from '../public/pp.png'
 
 function About() {
     return (
@@ -26,8 +24,8 @@ function About() {
                     <p className=" font-sans text-3xl">we believe in</p>
 
                     <div className="flex justify-center mt-7 gap-5  ">
-                        <Image src={img6} alt="burgeer" width={200} height={100} />
-                        <Image src={img7} alt="burgeer" width={200} height={100} />
+                        <Image src='/pizza.jpg' alt="burgeer" width={200} height={100} />
+                        <Image src='/pp.png' alt="burgeer" width={200} height={100} />
 
                         
                 </div>
